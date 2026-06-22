@@ -1,0 +1,451 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#007F73;
+    padding:12px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+    font-size:36px;
+    font-weight:bold;
+    margin: 0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:black;
+    font-weight:bold;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    background:white;
+    padding:60px 10%;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #007F73;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hello-text{
+    font-size:40px;
+    font-weight:bold;
+    color:black;
+}
+
+.name-text{
+    font-size:60px;
+    font-weight:bold;
+    color:black;
+    margin:10px 0;
+}
+
+.profession{
+    font-size:30px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+#changing-text{
+    color:#007F73;
+}
+
+.hero-description{
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    border:2px solid #007F73;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-icons a i{
+    color:#007F73;
+    font-size:22px;
+}
+
+.social-icons a:hover{
+    background:#007F73;
+}
+
+.social-icons a:hover i{
+    color:white;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills h2{
+    color:#007F73;
+}
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    width:220px;
+    padding:20px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 0 12px rgba(0,0,0,0.12);
+    text-align:center;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+.skill-card h3{
+    color:#007F73;
+    font-size:22px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects{
+    background:#f8f8f8;
+}
+
+.project-heading{
+    color:#007F73;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-left:6px solid #007F73;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#007F73;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact h2{
+    color:#007F73;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.input-row{
+    display:flex;
+    gap:20px;
+    width:100%;
+    max-width:850px;
+}
+
+.input-row input{
+    flex:1;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:3px solid #007F73;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    max-width:850px;
+    height:220px;
+    resize:none;
+}
+
+button{
+    width:180px;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:#007F73;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#97dad2;
+    text-align:center;
+    padding:25px;
+}
+
+.footer-icons{
+    margin-bottom:20px;
+}
+
+.footer-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    border:2px solid #007F73;
+    border-radius:50%;
+    color:#007F73;
+    text-decoration:none;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.footer-icons a:hover{
+    background:#007F73;
+    color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+
+    .hero-image img{
+        width:250px;
+        height:250px;
+    }
+
+    .hello-text{
+        font-size:30px;
+    }
+
+    .name-text{
+        font-size:42px;
+    }
+
+    .profession{
+        font-size:22px;
+    }
+
+    .input-row{
+        flex-direction:column;
+    }
+
+    .skill-card{
+        width:45%;
+    }
+
+    textarea{
+        width:100%;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    section{
+        padding:60px 5%;
+    }
+
+    nav h2{
+        font-size:22px;
+    }
+
+    .hero-image img{
+        width:180px;
+        height:180px;
+    }
+
+    .hello-text{
+        font-size:24px;
+    }
+
+    .name-text{
+        font-size:32px;
+    }
+
+    .profession{
+        font-size:18px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .skill-card{
+        width:100%;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    button{
+        width:150px;
+        font-size:16px;
+    }
+}
